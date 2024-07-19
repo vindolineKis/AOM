@@ -94,3 +94,10 @@ while True:
 # Close handles
 ljm.cleanInterval(intervalHandle)
 ljm.close(handle)
+
+# save the result to a file
+with open("result.txt", "w") as f:
+    f.write(f"AIN0 : {results[0]} V, AIN1 : {results[1]} V\n")
+    f.write("The program is done.\n")
+    f.write("Goodbye.\n")   
+print("The program is done.")

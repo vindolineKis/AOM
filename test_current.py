@@ -9,7 +9,7 @@ print(qpx.query('*IDN?'))
 
 # Write voltage to both outputs
 command = f'V2 15'
-# command = f'V1 15'
+command = f'V1 16'
 qpx.write(command)
 
 # Find out voltage at both outputs
@@ -24,13 +24,3 @@ time.sleep(1)
 
 print(res)
 print("CONNECTED")
-
-# for re in res:
-#     try:
-#         ins = rm.open_resource(re)
-#         print(f"successfully opened resource: {re}")
-#         print("rescouce info:", ins.query("*IDN?"))
-    
-#     except Exception as e:
-#         print(f"Failed to communicate to resouce:{re}")
-#         print(f"Error:{e}")
